@@ -46,7 +46,7 @@ const HomePage = () => {
         <h1 className='text-center p-3'>Our services</h1>
         <div className="our-services-list d-flex justify-content-center align-items-center mt-2">
           {ourServicesList.map((service, index) => (
-            <EttiksoftButton key={index} onClickAction={() => handleButtonClick(index)} buttonText = {"test"} buttonType={'submit'}/>
+            <EttiksoftButton key={index} onClickAction={() => handleButtonClick(index)} buttonText = {service.service} buttonType={'submit'}/>
           ))}
         </div>
         {selectedServiceIndex !== null && (

@@ -9,14 +9,14 @@ const EttiksoftButton = ({
 }) => {
     return (
         <button
-            className="ettiksoft-button p-3"
+            className="ettiksoft-button"
             disabled={disabled}
             type={buttonType}
             onClick={() => {
                 onClickAction()
             }}
         >
-            <span className='button-text'>{buttonText}</span>
+            <span className='button-tex'>{buttonText}</span>
 
         </button>
     )

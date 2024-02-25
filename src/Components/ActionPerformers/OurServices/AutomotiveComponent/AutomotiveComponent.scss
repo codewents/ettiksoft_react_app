@@ -4,6 +4,7 @@
     padding: 0 100px;
     position: absolute;
     top: 100px;
+    text-align: justify;
   }
   svg {
     width: 100%;
@@ -663,6 +664,9 @@ stroke-opacity: 0; /* Fully transparent */
       top: 10px;
       padding: 20px;
     }
+    svg {
+      margin-top: 0px;
+    }
   }
  }
 
@@ -696,7 +700,7 @@ stroke-opacity: 0; /* Fully transparent */
   .automotive-animated-container {
     .automotive-animated-content {
       top: 50px;
-      padding: 0 50px;
+      padding: 0 25px;
     }
     
   }
