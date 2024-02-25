@@ -1,0 +1,55 @@
+.ettiksoft-button {
+    // background-color: '#4CAF50';
+    // border: none;
+    // color: white;
+    // padding: 15px 32px;
+    // text-align: center;
+    // text-decoration: none;
+
+    // margin: 4px 2px;
+    // cursor: pointer;
+    // border-radius: 10px; 
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    // transition: background-color 0.3s;
+
+        width: 200px;
+        height: 50px;
+        border-radius: 9px;
+        color: white;
+        background-color: black;
+        border: 1px solid #757575;
+    
+    .button-text {
+
+    }
+}
+
+
+
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 420px and less)
+@media (max-width: 420px) {  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+@media (max-width: 576px) {  }
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+@media (max-width: 768px) {
+    .ettiksoft-button {
+        width: 150px;
+    }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {  }
