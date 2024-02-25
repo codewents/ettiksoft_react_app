@@ -1,3 +1,21 @@
+.dropdown-line {
+ display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0px 20px 0px 20px;
+  background-color: #000; /* Black line */
+}
+.full-width {
+  width: 100vw; /* Full width of viewport */
+}
+
+
+.card-hover:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+
 //------------------------------------------------------------------------------------------------------------
 // No media query for `xs` since this is the default in Bootstrap
 
