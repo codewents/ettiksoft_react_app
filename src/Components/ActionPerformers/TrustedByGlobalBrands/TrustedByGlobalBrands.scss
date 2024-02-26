@@ -1,0 +1,11 @@
+.trusted-brands-comtainer {
+    border-radius: 20px;
+    margin: 20px;
+    .brands-list {
+        flex-wrap: wrap;
+        gap: 2rem;
+        .client-image {
+
+        }
+    }
+}

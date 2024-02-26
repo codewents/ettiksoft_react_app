@@ -7,6 +7,7 @@ import medicalImage from '../../Assets/images/medical-img.jpg'
 import SEImage from '../../Assets/images/system-engineering-img.png'
 import EttiksoftButton from '../../Components/DataProviders/EttiksoftButton'
 import introVideo from '../../Assets/images/intro_video.mp4'
+import TrustedByGlobalBrands from '../../Components/ActionPerformers/TrustedByGlobalBrands/TrustedByGlobalBrands'
 
 const HomePage = () => {
   const [selectedServiceIndex, setSelectedServiceIndex] = useState(null);
@@ -63,6 +64,7 @@ const HomePage = () => {
           <OurServices service={{ service: "Automotive" }} />
         )}
       </div>
+      <TrustedByGlobalBrands/>
     </>
   )
 }
