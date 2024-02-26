@@ -1,35 +1,187 @@
+.navbar{
+  background-color: #000;
+  img{
+    max-width:30%;
+  }
+/* NavBar.scss */
+/* NavBar.scss */
+.navbar-nav {
+  margin-right: auto;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-link h6 {
+  margin-bottom: 0;
+}
+
+.nav-link.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 5px; /* Adjust margin as needed */
+  vertical-align: middle;
+  content: '';
+  border: solid var(--blue);
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+
+  .navbar-nav {
+    .nav-item{
+     .nav-link{
+        color: var(--lite-grey);
+      }
+      .nav-link:hover{
+        color: var(--blue);
+      }
+      .btn{
+        margin-left: 15px;
+        padding-left:30px;
+        padding-right:30px;
+        background-color: var(--blue);
+      }
+    
+    }
+    .nav-item.active .nav-link {
+      color: var(--blue); /* Change to your desired active color */
+    }
+  }
+ 
+}
+
+.dropdown-menu{
+ 
+  background-color: var(--lite-black);
+}
+
 .dropdown-line {
  display: block;
   width: 100%;
   height: 1px;
   margin: 0px 20px 0px 20px;
-  background-color: #000; /* Black line */
+  background-color: var(--grey); /* Black line */
 }
 .full-width {
-  width: 100vw; /* Full width of viewport */
+ width: 100vw; /* Full width of viewport */
+}
+.dropdown-item{
+  font-family: 'Poppins',sans-serif;
+  color: var(--blue);
+}
+.language .nav-link .icon{
+ width: 16px !important; /* Adjust the font size as needed */
 }
 
+.language .dropdown-item{
+  color: var(--lite-grey);
+}
+.dropdown-item:hover{
+  background-color: transparent;
+}
+.dropdown-item:hover{
+  color: var(--lite-grey);
+}
+.dropdown-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.card{
+  background-color: var(--lite-black);
+}
+.card-body{
+  border-radius: 20px;
+  background-color: var(--lite-black);
+}
+.border-radius{
+  border-radius: 20px;
+}
 .card-hover:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  
+  
+}
+.card-hover:hover{
+  .card-body{
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(27, 255, 183, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+  .card-title{
+    color: var(--blue);
+  }
 }
 
 
+
+.card-title{
+  color:var(--lite-grey);
+
+}
+.card-text{
+  color: var(--grey);
+}
 //------------------------------------------------------------------------------------------------------------
 // No media query for `xs` since this is the default in Bootstrap
 
-// Small devices (landscape phones, 420px and less)
-@media (max-width: 420px) {  }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
+@media (max-width: 576px) {
 
+     .nav-item{
+
+         .dropdown-menu{
+          .dropdown-item{
+            display: none;
+          }
+          .dropdown-line{
+            display: none;
+          }
+            .dropdown-cards{
+              text-align: center;
+                .my-3{
+                  margin-top:5px !important; /* Adjust margin-top on small screens */
+                  margin-bottom: 5px !important; /* Adjust margin-bottom on small screens */
+                  .card-body{
+                    padding: 0px;
+                    .card-text{
+                      display: none; 
+                    }
+                    .card-title{
+                      font-size: 16px;
+                      font-weight: normal;
+                    }
+                  }
+                 
+                }
+            }
+         }
+     }
+
+
+  }
+ 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { }
+@media (max-width: 768px) {
+
+ }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
+@media (max-width: 992px) {  
+  .full-width{  
+    width: calc(100vw - 20px); /* Subtracting 20px to account for padding and margin */
+    max-width: calc(100% - 20px);}
+
+
+}
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {  }

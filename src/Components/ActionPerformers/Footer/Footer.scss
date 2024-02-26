@@ -1,3 +1,36 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: var(--lite-black); /* Change to your desired background color */
+    padding: 20px; /* Add padding to the footer */
+}
+h5{
+    font-family: 'Poppins',sans-serif;
+    color: var(--grey);
+}
+li{
+    color: var(--grey);
+    margin-top: 5px;
+}
+li:hover{
+    color:var(--blue)
+}
+.title{
+    margin-top: 10px;
+    font-weight: 700;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto; /* Center the container horizontally */
+    padding-top: 40px;
+}
+img{
+    max-width:100%;
+  }
 //------------------------------------------------------------------------------------------------------------
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -5,7 +38,35 @@
 @media (max-width: 420px) {  }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
+@media (max-width: 576px) { 
+    li{
+        margin-top: 10px;
+    }
+    img{
+        display: block;
+        max-width:60%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+      }
+    .col-md-2 h5{
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    .list-unstyled {
+        display: none;
+      }
+      
+      .list-unstyled.visible {
+        display: block;
+      }
+      .col-md-2 {
+        border-bottom: 2px solid var(--dark-grey); /* Add a border line at the bottom */
+        padding-bottom: 15px; /* Optional: Add some space between the line and the content */
+        margin-bottom: 15px; /* Optional: Add some space between each column */
+      }
+ }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { }
