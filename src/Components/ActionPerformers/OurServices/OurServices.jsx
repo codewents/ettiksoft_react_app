@@ -2,11 +2,11 @@ import React from 'react'
 import './OurServices.scss'
 import AutomotiveComponent from './AutomotiveComponent/AutomotiveComponent'
 
-const OurServices = ({ service }) => {
+const OurServices = ({ service, reverse }) => {
     return (
         <>
             {service.service !== "Automotive" && (
-                <div className="our-services d-flex mt-5">
+                <div className={reverse === true ? 'our-services d-flex mt-5 flex-row-reverse' : "our-services d-flex mt-5"}>
                     <div className="service-content d-flex align-item-center justify-content-center flex-column">
                         <h1 className='service-content-header text-center'>
                             {service.heading}
