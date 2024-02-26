@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <div class="navbar-component">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <Link class="navbar-brand" href="#">Your Logo</Link>
+        <Link class="navbar-brand" to="/">Your Logo</Link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,7 +18,7 @@ const NavBar = () => {
             <li class="nav-item">
               <Link class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</Link>
               <div class="dropdown-menu full-width" aria-labelledby="navbarDropdown">
-                <Link class="dropdown-item" href="#">Products</Link>
+                <Link class="dropdown-item" to="/products">Products</Link>
                 <span class="dropdown-line"></span>
                 <div class="dropdown-cards d-flex flex-row flex-wrap">
                   <div class="col-12 col-md-4 my-3 ">
@@ -74,44 +74,24 @@ const NavBar = () => {
                 <span class="dropdown-line"></span>
                 <div class="dropdown-cards d-flex flex-row flex-wrap">
                   <div class="col-12 col-md-4 my-3 ">
+                    <Link to='/iot-solutions'>
                     <div class="card card-hover border-0">
                       <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">Description for Product 1.</p>
+                        <h5 class="card-title">IOT Solutions</h5>
+                        <p class="card-text text-black">Description for Product 1.</p>
                       </div>
                     </div>
+                    </Link>
                   </div>
                   <div class="col-12 col-md-4 my-3 border-0">
+                    <Link to='/mobility-engineering'>
                     <div class="card card-hover border-0">
                       <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">Description for Product 2.</p>
+                        <h5 class="card-title">Mobility Engineering Services</h5>
+                        <p class="card-text text-black">Description for Product 2.</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-12 col-md-4 my-3 ">
-                    <div class="card card-hover border-0">
-                      <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">Description for Product 3.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-4 my-3 ">
-                    <div class="card card-hover border-0">
-                      <div class="card-body">
-                        <h5 class="card-title">Product 4</h5>
-                        <p class="card-text">Description for Product 4.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-4 my-3">
-                    <div class="card card-hover border-0">
-                      <div class="card-body">
-                        <h5 class="card-title">Product 5</h5>
-                        <p class="card-text">Description for Product 5.</p>
-                      </div>
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>
