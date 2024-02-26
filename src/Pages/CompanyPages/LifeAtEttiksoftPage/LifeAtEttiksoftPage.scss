@@ -1,3 +1,74 @@
+.life-at-ettiksoft-container {
+    .lae-banner {
+        position: relative;
+        .banner-context  {
+            position: absolute;
+            width: 300px;
+            bottom: 0;
+            left: 50px;
+            background-color: black;
+            border-radius: 15px;
+        }
+    }
+    .dynamic-work-environment {
+        width: 75%;
+        margin: 0 auto;
+        .dye-images {
+            gap: 1rem;
+            flex-wrap: wrap;
+            img {
+                height: 500px;
+                border-radius: 15px;
+            }
+        }
+    }
+    .lae-review {
+        // height: 750px;
+        .lea-review-card {
+            background-color: black;
+            // height: 600px;
+            border-radius: 25px;
+            width: 90%;
+            gap: 1rem;
+            justify-content: space-around;
+            img {
+                border-radius: 25px;
+                height: 450px;
+            }
+            .lea-review-card-content {
+                width:65%;
+            }
+        }
+    }
+    .section-four-images {
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+            height: 670px;
+            // border-radius: 25px;
+        }
+    }
+    .our-initiatives-container {
+        .our-initiatives-cards {
+            gap: 1rem;
+            flex-wrap: wrap;
+            .initiatives-card {
+                width: 350px;
+                height: 500px;
+                border-radius: 20px;
+                align-items: center;
+                gap: 2rem;
+                img {
+                    border-radius: 20px;
+                }
+                .initiatives-card-content {
+                    gap: 2rem;
+                }
+            }
+        }
+    }
+    
+}
 //------------------------------------------------------------------------------------------------------------
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -10,11 +81,42 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { }
 
+@media (max-width: 768px) {
+    .life-at-ettiksoft-container {
+        
+        .lae-review {
+            
+            .lea-review-card {
+                flex-wrap: wrap;
+
+                .lea-review-card-content {
+                    width: 100%;
+                }
+               
+            }
+            
+        }
+        .section-four-images { 
+            gap: 1rem;
+            padding: 20px;
+            img {
+                border-radius: 25px;
+            }
+        }
+        
+    }
+}
+
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {  }
+@media (max-width: 992px) { 
+    
+}
+
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {  }
+
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {  }
