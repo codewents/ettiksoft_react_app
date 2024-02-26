@@ -1,3 +1,8 @@
+.footer{
+    background: white;
+}
+
+  
 //------------------------------------------------------------------------------------------------------------
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -5,7 +10,15 @@
 @media (max-width: 420px) {  }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
+@media (max-width: 576px) { 
+    .list-unstyled {
+        display: none;
+      }
+      
+      .list-unstyled.visible {
+        display: block;
+      }
+ }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { }
