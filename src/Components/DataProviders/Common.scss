@@ -1,27 +1,14 @@
 .ettiksoft-button {
-    // background-color: '#4CAF50';
-    // border: none;
-    // color: white;
-    // padding: 15px 32px;
-    // text-align: center;
-    // text-decoration: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 9px;
+    color: white;
+    background-color: black;
+    border: 1px solid #757575;
 
-    // margin: 4px 2px;
-    // cursor: pointer;
-    // border-radius: 10px; 
-    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    // transition: background-color 0.3s;
+.button-text {
 
-        width: 200px;
-        height: 50px;
-        border-radius: 9px;
-        color: white;
-        background-color: black;
-        border: 1px solid #757575;
-    
-    .button-text {
-
-    }
+}
 }
 
 
@@ -39,9 +26,9 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { }
 @media (max-width: 768px) {
-    .ettiksoft-button {
-        width: 150px;
-    }
+.ettiksoft-button {
+    width: 150px;
+}
 }
 
 
