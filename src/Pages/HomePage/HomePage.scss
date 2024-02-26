@@ -1,0 +1,52 @@
+.our-services-list {
+    width: 100%;
+    gap: 2rem;
+    // flex-wrap: wrap;
+}
+#video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+
+//------------------------------------------------------------------------------------------------------------
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 420px and less)
+@media (max-width: 420px) {  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+@media (max-width: 576px) {  }
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+@media (max-width: 768px) {
+    .our-services-list {
+        flex-wrap: wrap;
+    }
+ }
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {  }

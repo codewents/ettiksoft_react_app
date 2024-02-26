@@ -1,37 +1,34 @@
 import React, { useRef } from 'react'
 import "./Common.scss"
 
-
-
-
-export default function GTPInput({
-    isModal,
-    placeholder,
-    value,
-    onBlur,
-    onChangeText,
-    isError,
-    error,
-    max,
-    label,
+export default function EttiksoftInput({
+    isModal = false,
+    placeholder = '',
+    value = '',
+    onBlur = '',
+    onChangeText = '',
+    isError = false,
+    error = '',
+    max = '',
+    label = '',
     disabled = false,
-    maxLength,
+    maxLength = '',
     keyboardType = "text",
     disclaimer = "",
     inputType = "",
-    name,
-    id,
+    name = '',
+    id = '',
 
 }) {
     const ref = useRef(null);
 
     return (
         <>
-            <div className="mb-2 w-80">
-                {label && <label className="form-label w-80 text-left">{label}</label>}
-
+            <div className="mb-2">
+                {/* <label for="recipient-name" className="col-form-label text-white">Username*</label> */}
+                {label && <label for={label} className="form-label col-form-label text-left text-white">{label}</label>}
                 <input
-                    className={isError? "form-input w-100 error" : "form-input w-100"}
+                    className={isError ? "form-control bg-dark w-100 error" : "form-control bg-dark w-100"}
                     maxLength={maxLength}
                     placeholder={placeholder}
                     value={value}
@@ -41,7 +38,7 @@ export default function GTPInput({
                     disabled={disabled}
                     type={inputType ? inputType : keyboardType}
                     ref={ref}
-                    name= {name}
+                    name={name}
                     id={id}
                 />
                 {isError && (
