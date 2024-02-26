@@ -1,3 +1,29 @@
+.contact-us-container {
+    .part-one {
+        flex-wrap: wrap;
+        gap: 2rem;
+        .contact-us-content {
+            width: 45%;
+            // min-width: 350px;
+
+            gap: 1.5rem;
+            img {
+                // max-width: 600px;
+                width: 600px;
+                border-radius: 20px;
+            }
+        }
+        .contact-us-form {
+            border-radius: 20px;
+        }
+    }
+    .part-two {
+        .info-card {
+            background-color: black;
+        }
+    }
+}
+
 //------------------------------------------------------------------------------------------------------------
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -9,9 +35,30 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { }
+@media (max-width: 768px) {
+    .contact-us-container {
+        .part-one {
+            .contact-us-content {
+                width: 75%;
+                
+                img {
+                   
+                }
+            }
+            .contact-us-form {
+              width: 80%;
+            }
+        }
+    }
+ }
+
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {  }
+@media (max-width: 992px) { 
+    
+ }
+
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {  }
