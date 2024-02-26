@@ -1,5 +1,4 @@
 import './NavBar.scss'
-import ReactDOM from 'react-dom'
 import React, { useState } from 'react';
 import logo from '../../../Assets/images/ettiksoft-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -112,36 +111,46 @@ const NavBar = () => {
                   <h5 class="dropdown-item" >Company</h5>
                   <span class="dropdown-line"></span>
                   <div class="dropdown-cards d-flex flex-row flex-wrap">
-                    <div class="col-6 col-md-4 my-3 ">
-                      <div class="card card-hover border-0">
-                        <div class="card-body">
-                          <h5 class="card-title">About Us</h5>
-                          <p class="card-text d-none d-md-block">Description for Product 1.</p>
+                    
+                      <div class="col-6 col-md-4 my-3 ">
+                        <div class="card card-hover border-0">
+                        <Link to='/about-us'>
+                          <div class="card-body">
+                            <h5 class="card-title">About Us</h5>
+                            <p class="card-text d-none d-md-block">Description for Product 1.</p>
+                          </div>
+                          </Link>
                         </div>
                       </div>
-                    </div>
+                    
                     <div class="col-6 col-md-4 my-3 border-0">
                       <div class="card card-hover border-0">
+                      <Link to='/life-at-ettiksoft'>
                         <div class="card-body">
                           <h5 class="card-title">Life at Ettiksoft</h5>
                           <p class="card-text d-none d-md-block">Description for Product 2.</p>
                         </div>
+                        </Link>
                       </div>
                     </div>
                     <div class="col-6 col-md-4 my-3 ">
                       <div class="card card-hover border-0">
+                      <Link to='/careers'>
                         <div class="card-body">
                           <h5 class="card-title ">Careers</h5>
                           <p class="card-text d-none d-md-block">Description for Product 3.</p>
                         </div>
+                        </Link>
                       </div>
                     </div>
                     <div class="col-6 col-md-4 my-3 ">
                       <div class="card card-hover border-0">
+                      <Link to='/contact-us'>
                         <div class="card-body">
                           <h5 class="card-title">Contact us</h5>
                           <p class="card-text d-none d-md-block">Description for Product 4.</p>
                         </div>
+                        </Link>
                       </div>
                     </div>
 
