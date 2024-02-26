@@ -6,7 +6,7 @@ import iiotImage from '../../Assets/images/iiot-img.jpg'
 import medicalImage from '../../Assets/images/medical-img.jpg'
 import SEImage from '../../Assets/images/system-engineering-img.png'
 import EttiksoftButton from '../../Components/DataProviders/EttiksoftButton'
-
+import introVideo from '../../Assets/images/intro_video.mp4'
 
 const HomePage = () => {
   const [selectedServiceIndex, setSelectedServiceIndex] = useState(null);
@@ -42,18 +42,25 @@ const HomePage = () => {
   ];
   return (
     <>
+      <section id="video-container" className='mb-5'>
+        <video autoPlay muted loop>
+          <source src={introVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {/* Other content for your homepage */}
+      </section>
       <div className="our-services-section mb-3">
         <h1 className='text-center p-3'>Our services</h1>
         <div className="our-services-list d-flex justify-content-center align-items-center mt-2">
           {ourServicesList.map((service, index) => (
-            <EttiksoftButton key={index} onClickAction={() => handleButtonClick(index)} buttonText = {service.service} buttonType={'submit'}/>
+            <EttiksoftButton key={index} onClickAction={() => handleButtonClick(index)} buttonText={service.service} buttonType={'submit'} />
           ))}
         </div>
         {selectedServiceIndex !== null && (
           <OurServices service={ourServicesList[selectedServiceIndex]} />
         )}
         {selectedServiceIndex === null && (
-          <OurServices service={{service:"Automotive"}} />
+          <OurServices service={{ service: "Automotive" }} />
         )}
       </div>
     </>

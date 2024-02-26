@@ -3,6 +3,7 @@ import './NavBar.scss'
 
 import { Link } from 'react-router-dom'
 import PopupModal from '../PopupModal/PopupModal'
+import EttiksoftButton from '../../DataProviders/EttiksoftButton'
 const NavBar = () => {
   return (
     <div class="navbar-component">
@@ -176,13 +177,16 @@ const NavBar = () => {
               </div>
             </li>
             <li class="nav-item">
-              <Link className="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</Link>
+              {/* <Link className="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</Link> */}
+              <EttiksoftButton key={1}  buttonText={'Login'} buttonType={'bootstrap'}/>
             </li>
           </ul>
         </div>
 
       </nav>
+      {/* <PopupModal type={"Signin"} /> */}
       <PopupModal type={"Enquiry"} />
+
 
 
     </div>
