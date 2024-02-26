@@ -88,18 +88,22 @@ const NavBar = () => {
                   <div class="dropdown-cards d-flex flex-row flex-wrap">
                     <div class="col-6 col-md-4 my-3 ">
                       <div class="card card-hover border-0 border-radius" >
+                      <Link to='/iot-solutions'>
                         <div class="card-body">
                           <h5 class="card-title">IOT Solutions</h5>
                           <p class="card-text">Description for Product 1.</p>
                         </div>
+                        </Link>
                       </div>
                     </div>
                     <div class="col-6 col-md-4 my-3  ">
                       <div class="card card-hover border-0 border-radius">
+                      <Link to='/mobility-engineering'>
                         <div class="card-body">
                           <h5 class="card-title">Mobility Engineering</h5>
                           <p class="card-text">Description for Product 2.</p>
                         </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
