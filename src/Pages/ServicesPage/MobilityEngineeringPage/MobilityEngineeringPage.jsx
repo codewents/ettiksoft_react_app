@@ -5,6 +5,9 @@ import cyberSecurityImage from '../../../Assets/images/service/mobility-engineer
 import automotiveSoftwareImage from '../../../Assets/images/service/mobility-engineering/automative-software-img.jpg'
 import functionalSafetyImage from '../../../Assets/images/service/mobility-engineering/functional-safety-img.jpg'
 import modelBasedImage from '../../../Assets/images/service/mobility-engineering/model-based-img.jpg'
+import iiotImage from '../../../Assets/images/iiot-img.jpg'
+import medicalImage from '../../../Assets/images/medical-img.jpg'
+
 import OurServices from '../../../Components/ActionPerformers/OurServices/OurServices'
 
 
@@ -15,7 +18,7 @@ const MobilityEngineeringPage = () => {
     {
       heading: 'We excel in versatile Mobility Engineering Services.',
       paragraph: "Ettiksoft's team work systematically to understand clients ideas and requirements we convert these ideas into reality and deploy the products or services with high quality. Our experties focuses on reliability, safety, and cyber security in Mobility Engineeering.",
-      imagePath: mobEngImage,
+      imagePath: medicalImage,
       reverse: true
     },
     

@@ -3,22 +3,27 @@ import './IOTSolutionsPage.scss'
 import OurServices from '../../../Components/ActionPerformers/OurServices/OurServices'
 import iotSolutions from '../../../Assets/images/service/iot-solutions/businessman-pointing-his-business-presentation-high-technology-digital-screen 1 1.png'
 import mesImage from '../../../Assets/images/service/iot-solutions/productions.svg'
+import iotImage from '../../../Assets/images/iot-img.jpg'
+import iiotImage from '../../../Assets/images/iiot-img.jpg'
+import medicalImage from '../../../Assets/images/medical-img.jpg'
 const IOTSolutionsPage = () => {
   const ourServicesList = [
-    {
-      heading: 'We excel in versatile IoT solutions.',
-      paragraph: "Ettiksoft's IIoT solutions guarantee a secure, safe, and intelligent ecosystem, evolving alongside user experiences.",
-      imagePath: iotSolutions,
-      reverse: false
-    },
     
     {
-      paragraph: 'Recognizing the foundational role of Manufacturing Execution Systems (MES) in smart factories, Ettiksoft seamlessly connects the shop floor to the top floor.',
-      paragraphTwo: "Our MES solutions encompass a spectrum of capabilities vital for IIoT success, aiding industrial manufacturers in process tracking, documentation, shop floor operations, and maintaining transparency across assets.",
-      imagePath: mesImage,
-      reverse: true
+      service: 'IOT',
+      heading: 'IOT',
+      paragraph: 'IoT, a transformative technology in the 21st century, has revolutionized the way everyday objects interact with the internet. This connectivity facilitates seamless communication between people, processes, and various devices. Through the integration of low-cost computing, cloud services, big data analytics, and mobile technologies, physical entities can efficiently share and collect data with minimal human intervention.',
+      imagePath: iiotImage
+
+    },
+    {
+      service: 'Medical',
+      heading: 'Medical',
+      paragraph: 'Embedded systems, compact and task-specific, are widely utilized in healthcare for data storage and diagnostics. Medical professionals leverage advanced equipment, such as CT scanners and MRI machines, minimizing the need for physical examinations. Collaborative efforts of scientists and researchers continually enhance medical gadgets, ensuring optimal functionality.',
+      imagePath: medicalImage
     },
   ];
+  
   return (
     <>
       <h1 className='text-center mt-5'> IOT Solutions</h1>
